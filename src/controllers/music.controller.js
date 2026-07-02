@@ -88,7 +88,7 @@ async function createAlbum(req, res) {
 
     return res.status(201).json({
       message: "Album created successfully",
-      album:{
+      album: {
         id: album._id,
         title: album.title,
         musics: album.musics,
@@ -100,8 +100,8 @@ async function createAlbum(req, res) {
       message: error.message,
     });
   }
-      }
- 
+}
+
 module.exports = {
   createMusic,
 };
